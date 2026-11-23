@@ -1,46 +1,20 @@
-# FINAL PROJECT
+# European Electricity Carbon Intensity & Renewable Growth (15-Year Analysis)
 
-This repository is for all of the programs and files needed for your final project.
+## Project Overview
+This repository contains my final capstone project analyzing how the growth of wind and solar power 
+has impacted electricity carbon intensity gCO2/kWh across Europe over the last 15 years. 
+Using Python and interactive Bokeh visualizations, this project explores why certain European nations 
+reduce carbon emissions faster than others when they show a similar percentage of wind and solar generation.
 
-Include any program files or data files that are needed for your visualizations when submitting to this assignment.
+## Research Question
+> **How has the growth of wind and solar power changed electricity carbon intensity
+> in Europe over the last 15 years, and which countries give the best example for reducing emissions?**
 
-If you are pulling data from an API, please put the data into a file in this repository.
+## Data Source
+* **Ember Dataset(`release_generation_yearly_lower.csv`):** [Ember Yearly Electricity Data](https://ember-energy.org) — comprehensive annual data on global electricity generation and carbon intensity.
+* **Energy Dataset (`owid-energy-data.csv`):** [Our World in Data – Energy Dataset](https://github.com) containing yearly shares of solar, wind, hydro, and coal energy across countries.
+* **CO2 Emissions Dataset (`owid-co2-data.csv`):** [Our World in Data – CO2 and Greenhouse Gas Emissions Dataset](https://github.com) containing total CO2 emissions and per capita emissions by country and year.
 
-THANK YOU FOR A GREAT SEMESTER! :)
-
----
-
-## SPECIAL INSTRUCTIONS FOR API USERS
-
-Add a file named `config.py` and store your API keys in variables within this file. `config.py` has already been added to the `.gitignore` file.
-
-Add an `import config` to the top of your programs in order to use the API key. This will prevent the API key from being published to the web. You can then use the API key in your file by accessing the variable inside the config module, for example `config.my_api_key`.
-
-
-When using the requests library, you might need to `pip install requests`. If your computer complains about permissions, try installing for the user using `python -m pip install -user requests` on Windows or `pip install --user requests` on Mac.
-
----
-
-### Tips
-- Start the project early!
-    - The earlier you start, the more time you have to get help if you run into any 
-    problems.
-- Test your code. 
-    - Find good stopping points to test out bits of code and
-    functions even when your program is only partially finished. 
-    - Try out different inputs and see if you expect the outputs that you get.
-- Ask for help on Twist. 
-    - Remember that we are traveling together on this 
-    learning journey and you don't have to struggle alone!
-    - It is way more important that you get your questions answered than it is
-    for you to have a perfectly working program
-- Try some [rubber duck debugging](https://rubberduckdebugging.com/).
-    - Find a rubber duck, or a pet rock, a stuffed animal, a figurine, a patient dog.
-    - Explain your program, line by line, to the victim of your choice.
-    - Sometimes this helps you think through your code and how it works, and 
-    can help you find bugs and errors in your code.
-- DO NOT COPY/PASTE CODE unless otherwise instructed to.
-    - The purpose of these exercises is for you to practice your programming skills.
-    - You will only harm yourself if you do not make the effort to understand the
-    programming concepts we are covering.
-    
+## Repository Structure
+* `datasets/` Datasets from Ember and OWID.
+* `capstone.py`  Python scripts used for data processing and generating Bokeh visualizations.
